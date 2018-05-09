@@ -28,7 +28,7 @@
           comment: "classic user with multi dbs and multi-custom network allow password"}
       - { name: "testuser_for_defaults",
           password: "testplpassword",
-          networks: { 192.168.0.0/24, 10.0.0.0/8 },
+          networks: { 127.0.0.0/8, 192.168.0.0/24, 10.0.0.0/8 },
           dbs: {testu1,testu2,testu3} ,
           comment: "User with default profile and password"}
     clickhouse_dbs_custom:
