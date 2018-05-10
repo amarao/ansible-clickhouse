@@ -24,4 +24,7 @@
     name: "{{ item }}"
     state: latest
   with_items: "{{ clickhouse_package }}"
+  retry: 3
+  delay: 20
+  until: install|success
   become: true
